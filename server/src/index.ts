@@ -1,7 +1,8 @@
 import express, { Application } from 'express';
+import { config } from './config/config';
 
 const app: Application = express();
-const port = 5000;
+const port = config.port;
 
 
 app.get('/', (req, res) => {
